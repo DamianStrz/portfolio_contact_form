@@ -1,0 +1,54 @@
+/* Variables */
+:root {
+    --main-color: #fff;
+    --secondary-color: #000;
+    --background-color: #FBFBFB;
+    --gradient-color-one: #753097;
+    --gradient-color-two: #2F2A96;
+    --accent-color: #CE3596;
+    --font-color: #333333;
+    --font-family: "Roboto", sans-serif;
+    font-size: 10px;
+}
+
+/* 
+Media queries: 
+@media (min-width:320px) - smartphones, portrait iPhone, portrait 480x320 phones (Android)
+@media (min-width:480px) - smartphones, Android phones, landscape iPhone
+@media (min-width:600px) - portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android)
+@media (min-width:801px) - tablet, landscape iPad, lo-res laptops ands desktops
+@media (min-width:1025px) - big landscape tablets, laptops, and desktops
+@media (min-width:1281px) - hi-res laptops and desktops
+*/
+   
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.form-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background: linear-gradient(to bottom right, var(--gradient-color-one), var(--gradient-color-two));
+}
+
+form {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
